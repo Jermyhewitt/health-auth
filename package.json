@@ -1,0 +1,38 @@
+{
+  "name": "health-auth",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Auth layer for medical application",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jwt",
+    "auth"
+  ],
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "author": "Jermaine Hewitt",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ioredis": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.1.0",
+    "objection": "^3.0.1",
+    "rate-limiter-flexible": "^2.3.7",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
+    "jest": "^28.1.2"
+  }
+}
