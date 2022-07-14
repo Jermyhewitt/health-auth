@@ -1,11 +1,11 @@
 {
-  "name": "health-auth",
+  "name": "healthpass",
   "type": "module",
   "version": "1.0.0",
   "description": "Auth layer for medical application",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "keywords": [
     "jwt",
